@@ -1,4 +1,4 @@
 venv
 .idea/
 *.pyc
-_pychache_
+_pycache_
