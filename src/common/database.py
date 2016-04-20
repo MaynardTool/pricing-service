@@ -1,9 +1,11 @@
 import pymongo
+import os
 
 
 class Database:
     # static variable, so every instances of Databse class can have this variable
-    URI = 'mongodb://127.0.0.1:27017'
+    # URI = 'mongodb://127.0.0.1:27017'
+    URI = os.environ.get('MONGOLAB_URI')
     DATABASE = None
 
     # no init as we don't want any instances of Database to have this method unless you access it
